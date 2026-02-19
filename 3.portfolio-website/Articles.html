@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una pagina simple de HTML">
+    <meta name="keywords" content="Frontend, HTML, roadmap.sh">
+    <meta name="author" content="LD00">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Global.css">
+    <link rel="stylesheet" href="Styles/Articles.css">
+    <title> Articles | Basic HTML Website </title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="profile-section">
+                <picture>
+                    <source media="(min-width:768px)" srcset="Media/Mapache_750x750.png">
+                    <source media="(min-width:320px)" srcset="Media/Mapache_400x400.png">
+                    <img src="Media/Mapache_400x400.png" alt="A raccoon">
+                </picture>
+                <p> Your name </p>
+            </div>
+            <ul>
+                <li> <a href="Homepage.html"> Homepage /</a> </li>
+                <li> <a href="Projects.html"> Projects /</a> </li>
+                <li> <a href="Articles.html"> Articles /</a> </li>
+                <li> <a href="Contact.html"> Contact </a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header> <h1> Articles </h1> </header>
+        <div class="articles-section">
+            <article>
+                <h2>Understanding Semantic HTML: Why It Matters</h2>
+                <p>Published on January 15, 2025</p>
+                <div class="scroll-box">
+                    <p>Semantic HTML is more than just writing clean code—it's about creating meaningful structure that both browsers and assistive technologies can understand. By using elements like header, nav, main, and article instead of generic divs, we improve accessibility for screen readers and provide better context for search engines. This approach not only enhances SEO but also makes your codebase more maintainable. When you use semantic tags appropriately, you're building a foundation that benefits everyone who interacts with your website, from users with disabilities to developers who maintain your code in the future.</p>
+                </div>
+                <a href="#"> Read full article... </a>
+            </article>
+
+            <article>
+                <h2>5 Common Mistakes Junior Developers Make with Forms</h2>
+                <p>Published on January 10, 2025</p>
+                <div class="scroll-box">
+                    <p>Forms are fundamental to web development, yet many junior developers overlook critical details that affect user experience and accessibility. The most common mistake is forgetting to associate labels with inputs using the for attribute, which makes forms difficult to navigate for keyboard and screen reader users. Another frequent issue is not providing proper validation feedback or using placeholder text as labels. Additionally, many developers fail to implement proper error states or forget to disable submit buttons during processing, leading to duplicate submissions. Understanding these pitfalls early in your career will help you build more robust, user-friendly applications from the start.</p>
+                </div>
+                <a href="#"> Read full article... </a>
+            </article>
+
+            <article>
+                <h2>The Journey from HTML to Full-Stack: A Roadmap</h2>
+                <p>Published on January 5, 2025</p>
+                <div class="scroll-box">
+                    <p>Every full-stack developer starts with HTML, but the path forward can seem overwhelming. After mastering HTML fundamentals, the natural progression is to learn CSS for styling and layout, followed by JavaScript for interactivity. Once comfortable with the frontend trinity, you can explore frameworks like React or Vue to build complex user interfaces more efficiently. The backend journey typically begins with Node.js or Python, learning about servers, databases, and APIs. The key is to build projects at each stage—start with a static portfolio, add interactivity with JavaScript, then gradually introduce backend functionality. Remember, becoming a full-stack developer is a marathon, not a sprint, and every expert was once a beginner writing their first HTML tag.</p>
+                </div>
+                <a href="#"> Read full article... </a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p> all rights reserved 2025 </p>
+    </footer>
+
+</body>
+</html>

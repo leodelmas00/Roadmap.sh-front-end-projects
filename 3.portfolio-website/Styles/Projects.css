@@ -1,0 +1,26 @@
+/* --- MID-SECTION --- */
+
+
+header{
+    padding-top: 3.75rem;
+    text-align: center;
+}
+
+.projects-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects-section section{
+    border: 2px solid black;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 0.6rem;
+    margin: 0.6rem;
+}
+
+@media (max-width: 768px) {   
+    .projects-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
