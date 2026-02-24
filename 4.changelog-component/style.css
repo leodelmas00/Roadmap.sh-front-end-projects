@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(89, 171, 243);
+}
+
+hr{
+    border-color: white;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---HEADER--- */
+
+header{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(52, 139, 214);
+    color: aliceblue;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+}
+
+header h2{
+    color:rgb(166, 197, 223)
+}
+    
+
+/* ---TIMELINE--- */
+
+.timeline{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: aliceblue;
+}
+
+.timeline-component{
+    margin: 0 20px 20px 20px;
+}
+
+.timeline-component-bg{
+    padding: 1em;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+    background-color: rgb(52, 139, 214);
+    border-radius: 10px;
+}
+
+.timeline-date-right{
+    text-align: right;
+}
+
+.timeline-middle{
+    position:relative;
+    background: aliceblue;
+}
+
+.timeline-point{
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: aliceblue;
+    border-radius: 50%;
+}
+
+.timeline-component h2, p{
+    margin:0;
+}
