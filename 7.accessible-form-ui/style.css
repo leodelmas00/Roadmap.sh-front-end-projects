@@ -1,0 +1,167 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container{
+    display: flex;
+    background: linear-gradient(135deg, white, aliceblue);
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- LEFT COLUMN --- */
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+input{
+    background-color: rgb(230, 230, 230);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem;
+}
+
+.password{
+    position: relative;
+    display: inline-block;
+}
+
+.password input{
+    width: 93%;
+}
+
+.password button{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(230, 230, 230);
+}
+
+.password button:hover{
+    background-color: rgb(225, 241, 254);
+    border-radius: 50%;
+}
+
+input:last-child{
+    align-self: flex-end;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    border: 1px solid rgb(0, 12, 38);
+    height: fit-content;
+    width: 10rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input:last-child:hover{
+    background-color: rgb(225, 241, 254);
+}
+
+input:focus {
+    outline: 2px solid #1a1a2e;
+    outline-offset: 2px;
+}
+
+button:focus {
+    outline: 2px solid #1a1a2e;
+    outline-offset: 2px;
+    border-radius: 50%;
+}
+
+/* --- RIGHT COLUMN --- */
+
+.right-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.graph-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 9.37rem;
+    height: 9.37rem;
+    border-radius: 50%;
+    background: conic-gradient(
+        rgb(0, 0, 0) 0% 70%,
+        lightgray 70% 100%
+    );
+}
+
+.hole {
+    width: 6.56rem;
+    height: 6.56rem;
+    background: white;
+    border-radius: 50%;
+    margin: 1.40rem auto;
+}
+
+.todolist-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: auto;
+}
+
+.todolist-container s {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.todolist-container p {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}

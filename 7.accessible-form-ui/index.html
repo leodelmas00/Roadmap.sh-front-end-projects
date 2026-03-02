@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>accessible-form-ui</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>Update profile</h1>
+            <form action="#" method="post">
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname" placeholder="Whats your name?" aria-required="true" aria-invalid="false" aria-describedby="fname-error"> 
+                <span id="fname-error" class="error" role="alert"></span>
+
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="femail" placeholder="Whats your email?" aria-required="true" aria-invalid="false" aria-describedby="femail-error">
+                <span id="femail-error" class="error" role="alert"></span>
+
+                <label for="fpassword">Enter password</label>
+                <div class="password">
+                    <input id="fpassword" name="fpassword" placeholder="xxxxxx" type="password" aria-required="true" aria-invalid="false" aria-describedby="fpassword-error">
+                    <button type="button" aria-label="Show password" aria-pressed="false">
+                        <img src="eye-regular-full.svg" alt="">
+                    </button>
+                </div>
+                <span id="fpassword-error" class="error" role="alert"></span>
+
+                <label for="fpassword_repeat">Confirm password</label>
+                    <div class="password">
+                        <input type="password" id="fpassword_repeat" name="fpassword_repeat" placeholder="xxxxxx again"
+                            aria-required="true" aria-invalid="false" aria-describedby="fpassword-repeat-error">
+                        <button type="button" aria-label="Show confirm password" aria-pressed="false">
+                            <img src="eye-regular-full.svg" alt="">
+                        </button>
+                    </div>
+                <span id="fpassword-repeat-error" class="error" role="alert"></span>
+
+                <input type="submit" value="Update" aria-label="Update profile">
+            </form>
+        </div>
+
+        <div class="right-column">
+            <div class="graph-container">
+                <div class="progress-bar"> <div class="hole"> </div> </div>
+                <h3>Profile completeness</h3>
+            </div>
+            <div class="todolist-container">
+                <s>Create account</s>
+                <s>Update roadmap progress</s>
+                <s>Setup public profile</s>
+                <p>Complete your first project</p>
+                <p>Invite your friends</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
