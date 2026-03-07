@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.background-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('media/dog.webp');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.card-container{
+    display: grid;
+    height: 20vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 60%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.card-container a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    border: 1px solid black;
+    color: #2c2c2c;
+    letter-spacing: 0.05em;
+    transition: 0.3s ease;
+}
+
+.card-container a:hover{
+    background-color: rgb(75, 0, 155);
+    color: white;
+}
+
+.card-container a.active{
+    background-color: rgb(0, 0, 155, 0.5);
+    color: white;
+}
