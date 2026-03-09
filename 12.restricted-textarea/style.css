@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(to bottom, aliceblue, rgb(199, 222, 242));
+    font-family: "Quicksand", sans-serif;
+}
+
+textarea{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+p{
+    text-align: end;
+}
