@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Delius", cursive;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+    color: white;
+}
+
+.questions-container{
+    width: 600px;
+    height: 500px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: "Delius", cursive;
+    font-weight: bold;
+}
+
+img{
+    width: 20px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+img.rotated {
+  transform: rotate(180deg);
+}
+
+.content{
+    display: none;
+    background-color: #E9E9EDFF;
+    border-radius: 20px;
+    margin: 0.3rem;
+}
+
+.content.visible {
+    display: block;
+}
+
+.content p{
+    margin: 0;
+    padding: 10px;
+    color: black;
+}
+
+/* Tablets (max 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .questions-container {
+        width: 90vw;
+        height: auto;
+        padding: 0.75rem;
+    }
+}
+
+/* Móviles (max 480px) */
+@media (max-width: 480px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 0.85rem;
+    }
+
+    .questions-container {
+        width: 95vw;
+        padding: 0.5rem;
+    }
+
+    button {
+        border-radius: 12px;
+        padding: 0.4rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .content {
+        border-radius: 12px;
+    }
+
+    .content p {
+        font-size: 0.85rem;
+    }
+
+    img {
+        width: 16px;
+    }
+}
