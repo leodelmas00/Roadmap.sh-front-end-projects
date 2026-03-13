@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #12111A;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+h1{
+    color: #F0EEFF;
+}
+
+.progress-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    flex: 0.6;
+    background-color: #2E2B45;
+    border: 2px solid #2E2B45;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7F77DD;
+    width: 10%;
+    transition: width 0.3s ease;
+}
+
+.progress-container p {
+    position: absolute;
+    right: 1rem;
+    margin: 0;
+    color: #6B6690;
+}
+.card{
+    width: 100%;
+    flex: 4;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 2px solid #2E2B45;
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: x-large;
+    background-color: #1E1C2E;
+    color: #F0EEFF;
+    transition: 0.3s ease;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+button:hover{
+    background-color: #3a3659;
+    transition: 0.3s ease;
+}
+
+.question, .answer{
+    width: 100%;
+    margin: 0;
+}
+
+.answer{
+    color: #A89FE8;
+}
+
+.directions{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    flex: 1;
+    gap: 1rem;
+}
